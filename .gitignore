@@ -32,6 +32,6 @@
 *.app
 
 # ignora quaisquer diretórios 
-.bin/
-.obj/
-.packages/
+*/bin/
+*/obj/
+packages/
