@@ -39,6 +39,7 @@
             this.btnJogar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtRetorno = new System.Windows.Forms.TextBox();
+            this.btnTabuleiro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudLinha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudColuna)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -146,11 +147,22 @@
             this.txtRetorno.Size = new System.Drawing.Size(265, 81);
             this.txtRetorno.TabIndex = 0;
             // 
+            // btnTabuleiro
+            // 
+            this.btnTabuleiro.Location = new System.Drawing.Point(27, 179);
+            this.btnTabuleiro.Name = "btnTabuleiro";
+            this.btnTabuleiro.Size = new System.Drawing.Size(107, 23);
+            this.btnTabuleiro.TabIndex = 10;
+            this.btnTabuleiro.Text = "Consultar tabuleiro";
+            this.btnTabuleiro.UseVisualStyleBackColor = true;
+            this.btnTabuleiro.Click += new System.EventHandler(this.btnTabuleiro_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 186);
+            this.ClientSize = new System.Drawing.Size(489, 234);
+            this.Controls.Add(this.btnTabuleiro);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnJogar);
             this.Controls.Add(this.nudColuna);
@@ -187,6 +199,7 @@
         private System.Windows.Forms.Button btnJogar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtRetorno;
+        private System.Windows.Forms.Button btnTabuleiro;
     }
 }
 
